@@ -11,7 +11,7 @@ router.post("/register", asyncHandler(async (req, res) => {
         return res.status(400).json({ message: "Username and password are required." });  
     }  
 
-    const newUser = new User({ username, password }); // Ensure password is hashed before saving  
+    const newUser = new User({ username, password });
     await newUser.save();  
     
     res.status(201).json({ message: "User registered successfully" });  
@@ -22,7 +22,7 @@ router.post("/login", asyncHandler(async (req, res) => {
     const { username, password } = req.body;  
 
     const user = await User.findOne({ username });  
-    if (!user || !user.validatePassword(password)) { // Ensure you have a validatePassword method  
+    if (!user || !user.validatePassword(password)) {
         return res.status(401).json({ message: "Invalid Credentials" });  
     }  
 

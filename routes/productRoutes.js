@@ -18,7 +18,7 @@ router.get("/:id", asyncHandler(async (req, res) => {
 
 // Create a new product  
 router.post("/", asyncHandler(async (req, res) => {  
-    const { name, price, brand } = req.body; // Ensure 'brand' is included  
+    const { name, price, brand } = req.body;
 
     // Validate input  
     if (!name || !price || !brand) {  
