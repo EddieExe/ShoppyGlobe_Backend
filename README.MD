@@ -1,6 +1,6 @@
 # 🛍️ ShoppyGlobe API  
 
-# GitHub Link: https://github.com/EddieExe/ShoppyGlobe_Backend
+## GitHub Link: https://github.com/EddieExe/ShoppyGlobe_Backend
 
 ## 📌 Overview  
 ShoppyGlobe is the backend for an e-commerce application built using **Node.js, Express, and MongoDB**. It provides RESTful APIs for managing products, cart functionality, and user authentication.  
